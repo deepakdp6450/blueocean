@@ -1,0 +1,808 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Uthr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-12 04:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.7.2\n"
+"X-Domain: uthr"
+
+#: inc/customizer.php:408 inc/customizer.php:729 inc/customizer.php:738
+#: inc/customizer.php:747 inc/customizer.php:756 inc/customizer.php:765
+msgid "#"
+msgstr ""
+
+#. 1: list of categories.
+#: inc/template-tags.php:65
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#. %s: Quantity.
+#: woocommerce/global/quantity-input.php:28
+#, php-format
+msgid "%s quantity"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:38
+#, php-format
+msgid "%s review"
+msgid_plural "%s reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/customizer.php:674
+#, php-format
+msgid "&copy; %1$s, %2$s"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:62
+msgid ", "
+msgstr ""
+
+#: footer.php:141
+msgid ". All Rights Reserved."
+msgstr ""
+
+#: inc/customizer.php:261
+msgid "0123 4567 8910"
+msgstr ""
+
+#: 404.php:22 inc/customizer.php:778
+msgid "404"
+msgstr ""
+
+#: inc/customizer.php:803
+msgid "404 Button Text"
+msgstr ""
+
+#: inc/customizer.php:793
+msgid "404 Content"
+msgstr ""
+
+#: inc/customizer.php:212
+msgid "404 Page Settings"
+msgstr ""
+
+#: inc/customizer.php:775
+msgid "404 Text"
+msgstr ""
+
+#: inc/customizer.php:784
+msgid "404 Title"
+msgstr ""
+
+#: inc/widget/widget_register.php:9 inc/widget/widget_register.php:19
+#: inc/widget/widget_register.php:33
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/demo-importer.php:13
+msgid "After you import this demo, you will have setup all content."
+msgstr ""
+
+#: inc/global-functions.php:169 inc/global-functions.php:172
+#: inc/global-functions.php:175 inc/global-functions.php:182
+#: inc/global-functions.php:185 inc/global-functions.php:190
+msgid "Archives"
+msgstr ""
+
+#: inc/global-functions.php:201
+msgid "Author: "
+msgstr ""
+
+#: woocommerce/single-product/product-image.php:46
+msgid "Awaiting product image"
+msgstr ""
+
+#: inc/customizer.php:449
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer.php:441
+msgid "Background Image"
+msgstr ""
+
+#: inc/customizer.php:833
+msgid "Banner Image"
+msgstr ""
+
+#: template-parts/page-title.php:10
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer.php:510
+msgid "Blog Content"
+msgstr ""
+
+#: inc/customizer.php:195
+msgid "Blog layout Settings"
+msgstr ""
+
+#: inc/customizer.php:465
+msgid "Breadcrumb Color"
+msgstr ""
+
+#: inc/customizer.php:473
+msgid "Breadcrumb Hover Color"
+msgstr ""
+
+#: inc/customizer.php:414
+msgid "Button BG Color"
+msgstr ""
+
+#: inc/customizer.php:375 inc/customizer.php:422
+msgid "Button Color"
+msgstr ""
+
+#: inc/customizer.php:430
+msgid "Button Hover BG Color"
+msgstr ""
+
+#: inc/customizer.php:383
+msgid "Button Hover Color"
+msgstr ""
+
+#: inc/customizer.php:405
+msgid "Button Link"
+msgstr ""
+
+#: inc/customizer.php:395
+msgid "Button Text"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:34
+msgid "Category:"
+msgid_plural "Categories:<span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/cart/mini-cart.php:94
+msgid "Checkout"
+msgstr ""
+
+#: inc/menu/menu.php:49
+msgid "Column"
+msgstr ""
+
+#: inc/menu/menu.php:60
+msgid "Column Five"
+msgstr ""
+
+#: inc/menu/menu.php:59
+msgid "Column Four"
+msgstr ""
+
+#: inc/menu/menu.php:56
+msgid "Column One"
+msgstr ""
+
+#: inc/menu/menu.php:58
+msgid "Column Three"
+msgstr ""
+
+#: inc/menu/menu.php:57
+msgid "Column Two"
+msgstr ""
+
+#: comments.php:91
+msgid "Comment *"
+msgstr ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: footer.php:141
+msgid "Copyright"
+msgstr ""
+
+#: inc/customizer.php:681
+msgid "Copyright BG Color"
+msgstr ""
+
+#: functions.php:51
+msgid "Copyright Right"
+msgstr ""
+
+#: inc/customizer.php:690
+msgid "Copyright Text Color"
+msgstr ""
+
+#: inc/menu/menu.php:78
+msgid "Disable Link"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page.php:32
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:56
+msgid "Elementor"
+msgstr ""
+
+#: inc/menu/menu.php:41
+msgid "Enable MegaMenu"
+msgstr ""
+
+#: inc/global-functions.php:216
+msgid "Error 404"
+msgstr ""
+
+#: woocommerce/archive-product.php:47 inc/customizer.php:817
+msgid "ESSENTIAL <br> WEARS"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:93
+msgid "Ever Compare"
+msgstr ""
+
+#: inc/customizer.php:726
+msgid "Facebook Link"
+msgstr ""
+
+#. Description of the theme
+msgid "Fashion WooCommerce WordPress Theme"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:104
+msgid "Fluent Forms"
+msgstr ""
+
+#: inc/customizer.php:297
+msgid "Follow us"
+msgstr ""
+
+#: inc/customizer.php:294
+msgid "Follow us text"
+msgstr ""
+
+#: inc/widget/widget_register.php:31
+msgid "Footer "
+msgstr ""
+
+#: inc/customizer.php:671
+msgid "Footer Copyright Text"
+msgstr ""
+
+#: inc/customizer.php:649
+msgid "Footer Left Content"
+msgstr ""
+
+#: inc/customizer.php:641
+msgid "Footer Left Logo"
+msgstr ""
+
+#: inc/customizer.php:201
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/customizer.php:279
+msgid "Free shipping worldwide for orders over $99"
+msgstr ""
+
+#: 404.php:26 inc/customizer.php:806
+msgid "Go back to Home Page"
+msgstr ""
+
+#: inc/customizer.php:313
+msgid "Header BG Color"
+msgstr ""
+
+#: inc/customizer.php:321
+msgid "Header Menu Color"
+msgstr ""
+
+#: inc/customizer.php:329
+msgid "Header Menu Hover Color"
+msgstr ""
+
+#: inc/customizer.php:179
+msgid "Header Settings"
+msgstr ""
+
+#: inc/customizer.php:303
+msgid "Header Top BG Color"
+msgstr ""
+
+#: inc/customizer.php:258
+msgid "Header Top Left Info "
+msgstr ""
+
+#: inc/customizer.php:267
+msgid "Header Top Left Info 2"
+msgstr ""
+
+#: inc/customizer.php:276
+msgid "Header Top Middle Info"
+msgstr ""
+
+#: inc/customizer.php:174
+msgid "Header Top Settings"
+msgstr ""
+
+#: inc/global-functions.php:15
+msgid "Home"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:61
+msgid "HT Slider for Elementor"
+msgstr ""
+
+#. URI of the theme
+msgid "https://themes.hasthemes.com/uthr/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.templatemonster.com/vendors/ThemesHub/"
+msgstr ""
+
+#: inc/customizer.php:735
+msgid "Instagram Link"
+msgstr ""
+
+#: template-parts/content-none.php:45
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: comments.php:93
+msgid "Leave a Comment"
+msgstr ""
+
+#: functions.php:52
+msgid "Login Menu"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:66
+msgid "MailChimp for WordPress"
+msgstr ""
+
+#: functions.php:50
+msgid "Main Menu"
+msgstr ""
+
+#: inc/customizer.php:184
+msgid "Menu Button"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:51
+msgid "Move Addons for Elementor"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:30
+msgid "N/A"
+msgstr ""
+
+#: inc/customizer.php:557
+msgid "Newslatter Content"
+msgstr ""
+
+#: inc/customizer.php:568
+msgid "Newslatter Shortcode"
+msgstr ""
+
+#: inc/customizer.php:547
+msgid "Newslatter Title"
+msgstr ""
+
+#: inc/customizer.php:532
+msgid "Next"
+msgstr ""
+
+#: inc/customizer.php:529
+msgid "Next Button Text"
+msgstr ""
+
+#: template-parts/content-single.php:71
+msgid "Next Post"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:101
+msgid "No products in the cart."
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:109
+msgid "One Click Demo Import"
+msgstr ""
+
+#. 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: template-parts/content.php:50 template-parts/content-single.php:45
+#: inc/global-functions.php:206
+msgid "Page"
+msgstr ""
+
+#: 404.php:23 inc/customizer.php:787
+msgid "PAGE NOT FOUND"
+msgstr ""
+
+#: inc/customizer.php:457
+msgid "Page Title Color"
+msgstr ""
+
+#: inc/customizer.php:189
+msgid "Page Title Settings"
+msgstr ""
+
+#: template-parts/content.php:46 template-parts/content-page.php:19
+#: template-parts/content-single.php:41
+msgid "Pages:"
+msgstr ""
+
+#: inc/customizer.php:762
+msgid "Pinterest Link"
+msgstr ""
+
+#: searchform.php:14
+msgctxt "placeholder"
+msgid "Search Here"
+msgstr ""
+
+#: footer.php:158
+msgctxt "placeholder"
+msgid "Search..."
+msgstr ""
+
+#: inc/tgm-plugin/init.php:135
+msgid "Plugin activated successfully."
+msgstr ""
+
+#. If there are characters in your language that are not supported by Open Sans, translate this to 'off'. Do not translate into your own language.
+#: functions.php:130
+msgctxt "Poppins font: on or off"
+msgid "on"
+msgstr ""
+
+#. %s: post author.
+#: inc/template-tags.php:45
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/customizer.php:523
+msgid "Prev"
+msgstr ""
+
+#: inc/customizer.php:520
+msgid "Prev Button Text"
+msgstr ""
+
+#: template-parts/content-single.php:70
+msgid "Previous Post"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:42
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:31
+msgid "Quantity"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:98
+msgid "QuickSwish"
+msgstr ""
+
+#: inc/customizer.php:504
+msgid "Read More"
+msgstr ""
+
+#: inc/customizer.php:492
+msgid "Read More Button"
+msgstr ""
+
+#: inc/customizer.php:501
+msgid "Read More Button Text"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-single.php:124
+msgid "Related Posts"
+msgstr ""
+
+#: woocommerce/single-product/related.php:26
+msgid "Related products "
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:64
+msgid "Remove this item"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:134
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: woocommerce/product-searchform.php:25
+msgid "Search for:"
+msgstr ""
+
+#: woocommerce/product-searchform.php:26
+msgid "Search products&hellip;"
+msgstr ""
+
+#: inc/global-functions.php:211
+msgid "Search results for: "
+msgstr ""
+
+#: inc/menu/menu.php:52
+msgid "Select Column"
+msgstr ""
+
+#: inc/woo-config.php:87
+msgid "SHARE:"
+msgstr ""
+
+#: template-parts/content-single.php:58
+msgid "Share: "
+msgstr ""
+
+#: inc/customizer.php:824
+msgid "Shop Banner Content"
+msgstr ""
+
+#: inc/customizer.php:814
+msgid "Shop Banner Title"
+msgstr ""
+
+#: inc/widget/widget_register.php:17
+msgid "Shop Sidebar "
+msgstr ""
+
+#: inc/customizer.php:348
+msgid "Show Cart Button"
+msgstr ""
+
+#: inc/customizer.php:699
+msgid "Show Copyright Social Icon"
+msgstr ""
+
+#: inc/customizer.php:631
+msgid "Show Footer Left Content"
+msgstr ""
+
+#: inc/customizer.php:538
+msgid "Show Footer Newslatter"
+msgstr ""
+
+#: inc/customizer.php:578
+msgid "Show Footer Widgets Area"
+msgstr ""
+
+#: inc/customizer.php:339
+msgid "Show Search Button"
+msgstr ""
+
+#: inc/customizer.php:357
+msgid "Show User Info"
+msgstr ""
+
+#: inc/customizer.php:366
+msgid "Show Wishlist icon"
+msgstr ""
+
+#: inc/customizer.php:249
+msgid "Show/Hide Header Top"
+msgstr ""
+
+#: inc/customizer.php:285
+msgid "Show/Hide Header Top Right"
+msgstr ""
+
+#: inc/widget/widget_register.php:7
+msgid "Sidebar "
+msgstr ""
+
+#: woocommerce/single-product/meta.php:30
+msgid "SKU:"
+msgstr ""
+
+#: inc/customizer.php:708
+msgid "Social Icon Color"
+msgstr ""
+
+#: inc/customizer.php:717
+msgid "Social Icon Hover Color"
+msgstr ""
+
+#: inc/global-functions.php:340
+msgid "Social link doesn't exist"
+msgstr ""
+
+#: inc/customizer.php:207
+msgid "Social Links Settings"
+msgstr ""
+
+#: template-parts/content-none.php:38
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/demo-importer.php:7
+msgid "Standard Demo"
+msgstr ""
+
+#: woocommerce/product-searchform.php:27
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: comments.php:89
+msgid "Submit Comment"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:72
+msgid "Swatchly - Variation Swatches for WooCommerce Products"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:36
+msgid "Tag:"
+msgid_plural "Tags:<span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/content-single.php:55
+msgid "Tags: "
+msgstr ""
+
+#: woocommerce/archive-product.php:48 inc/customizer.php:827
+msgid "The collections basic items <br> essential for all girls"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:136
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: 404.php:24 inc/customizer.php:796
+msgid "The page you are looking for does not exist or has been moved."
+msgstr ""
+
+#: inc/customizer.php:169
+msgid "Theme Color Settings"
+msgstr ""
+
+#: inc/customizer.php:232
+msgid "Theme Primary Color"
+msgstr ""
+
+#: inc/customizer.php:240
+msgid "Theme Secondary Color"
+msgstr ""
+
+#. Author of the theme
+msgid "ThemesHub"
+msgstr ""
+
+#: inc/customizer.php:481
+msgid "To Hide Page Title Section On Page"
+msgstr ""
+
+#: inc/customizer.php:744
+msgid "Twitter Link"
+msgstr ""
+
+#. Name of the theme
+msgid "Uthr"
+msgstr ""
+
+#: inc/customizer.php:159
+msgid "Uthr Theme Options"
+msgstr ""
+
+#: inc/customizer.php:674
+msgid "Uthr Theme. All Rights Reserved. Built with Hasthemes."
+msgstr ""
+
+#: inc/customizer.php:270
+msgid "uthrstore@domain.com"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:91
+msgid "View cart"
+msgstr ""
+
+#: inc/customizer.php:598
+msgid "Widget Area BG Color"
+msgstr ""
+
+#: inc/customizer.php:590
+msgid "Widget Area BG Image"
+msgstr ""
+
+#: inc/customizer.php:607
+msgid "Widget Title Color"
+msgstr ""
+
+#: inc/customizer.php:615
+msgid "Widgets Content Color"
+msgstr ""
+
+#: inc/customizer.php:623
+msgid "Widgets Link Hover Color"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:77
+msgid "WishSuite - Wishlist for WooCommerce"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:82
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/customizer.php:217
+msgid "WooCommerce Settings"
+msgstr ""
+
+#: inc/tgm-plugin/init.php:88
+msgid "WooLentor - WooCommerce Elementor Addons + Builder"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:29
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: comments.php:79
+msgid "Your Email *"
+msgstr ""
+
+#: comments.php:76
+msgid "Your Name *"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:49
+msgid "Your order"
+msgstr ""
+
+#: comments.php:82
+msgid "Your Website"
+msgstr ""
+
+#: inc/customizer.php:753
+msgid "Youtube Link"
+msgstr ""
