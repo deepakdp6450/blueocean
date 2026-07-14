@@ -1,1 +1,5 @@
 [2026-07-12 09:42:45] [class-ss-crawlers.php:74] Found 18 crawler files
+[2026-07-12 16:56:39] [class-ss-crawlers.php:74] Found 18 crawler files
+[2026-07-12 16:57:43] [class-ss-crawlers.php:74] Found 18 crawler files
+[2026-07-14 18:50:57] [class-ss-url-fetcher.php:529] Fetching URL: http://localhost:8080/blueocean
+[2026-07-14 18:52:44] [class-ss-crawlers.php:74] Found 18 crawler files

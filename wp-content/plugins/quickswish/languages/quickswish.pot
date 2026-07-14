@@ -1,0 +1,453 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: QuickSwish - WooCommerce product quick view\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-19 04:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.1\n"
+"X-Domain: quickswish"
+
+#: includes/classes/Admin/Admin_Fields.php:167
+msgid "Active thumbnail border color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:223
+#: includes/classes/Admin/Admin_Fields.php:231
+#: includes/classes/Frontend/Popup_Manager.php:119
+msgid "Add to cart"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:108
+msgid "After Add To Cart"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:365
+msgid "Background Color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:107
+msgid "Before Add To Cart"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:409
+msgid "Border Radius"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:386
+#: includes/classes/Admin/Admin_Fields.php:400
+#: includes/classes/Admin/Admin_Fields.php:414
+msgid "Bottom"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:139
+msgid "Button custom icon"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:341
+msgid "Button custom style"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:126
+msgid "Button icon type"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:103
+msgid "Button position"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:63
+msgid "Button Settings"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:316
+msgid "Button style"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:117
+msgid "Button text"
+msgstr ""
+
+#: includes/templates/quickswish-social-share.php:29
+msgid "Check%20this%20"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:330
+msgid "Choose a popup window style type from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:317
+msgid "Choose a style for the quickview button from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:155
+msgid "Choose a thumbnail layout from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:127
+msgid "Choose an icon type for the quickview button from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:216
+msgid "Choose which content should be presented on the popup window."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:349
+msgid "Color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:207
+msgid "Content"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:133
+#: includes/classes/Admin/Admin_Fields.php:267
+#: includes/classes/Admin/Admin_Fields.php:323
+#: includes/classes/Admin/Admin_Fields.php:335
+msgid "Custom"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:132
+#: includes/classes/Admin/Admin_Fields.php:321
+#: includes/classes/Admin/Admin_Fields.php:334
+msgid "Default"
+msgstr ""
+
+#: includes/templates/quickswish-social-share.php:28
+#: includes/classes/Admin/Admin_Fields.php:293
+msgid "Email"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:238
+msgid "Enable ajax add to cart"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:89
+msgid "Enable quick view"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:96
+msgid "Enable quick view on mobile"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:285
+msgid "Enable share buttons"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:254
+msgid "Enable social share button"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:257
+msgid "Enable social share button."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:241
+msgid "Enable this to activate AJAX add to cart feature in the popup window."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:118
+msgid "Enter your quickview button text."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:276
+msgid "Enter your social share button title."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:222
+#: includes/classes/Admin/Admin_Fields.php:230
+#: includes/classes/Frontend/Popup_Manager.php:118
+msgid "Excerpt"
+msgstr ""
+
+#: includes/templates/quickswish-social-share.php:12
+#: includes/templates/quickswish-social-share.php:55
+#: includes/classes/Admin/Admin_Fields.php:289
+#: includes/classes/Admin/Admin_Fields.php:301
+msgid "Facebook"
+msgstr ""
+
+#. Author of the plugin
+msgid "HasTheme"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:373
+msgid "Hover Background Color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:357
+msgid "Hover Color"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://hasthemes.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://hasthemes.com/plugins/"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:263
+msgid ""
+"If you choose default this button comes from QuickSwish otherwise display "
+"from your theme WooCommerce hook."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:387
+#: includes/classes/Admin/Admin_Fields.php:401
+#: includes/classes/Admin/Admin_Fields.php:415
+msgid "Left"
+msgstr ""
+
+#: includes/templates/quickswish-social-share.php:24
+#: includes/templates/quickswish-social-share.php:58
+#: includes/classes/Admin/Admin_Fields.php:292
+#: includes/classes/Admin/Admin_Fields.php:304
+msgid "Linkedin"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:395
+msgid "Margin"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:432
+msgid "Max Width"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:224
+#: includes/classes/Admin/Admin_Fields.php:232
+#: includes/classes/Frontend/Popup_Manager.php:120
+msgid "Meta"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:131
+msgid "None"
+msgstr ""
+
+#: includes/templates/quickswish-social-share.php:40
+#: includes/classes/Admin/Admin_Fields.php:296
+msgid "Odnoklassniki"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:381
+msgid "Padding"
+msgstr ""
+
+#: includes/templates/quickswish-social-share.php:20
+#: includes/templates/quickswish-social-share.php:57
+#: includes/classes/Admin/Admin_Fields.php:291
+#: includes/classes/Admin/Admin_Fields.php:303
+msgid "Pinterest"
+msgstr ""
+
+#: includes/templates/quickswish-product-images.php:33
+#: includes/templates/quickswish-product-images.php:53
+msgid "Placeholder"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:67
+msgid "Popup Settings"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:424
+msgid "Popup window custom style"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:329
+msgid "Popup window style"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:221
+#: includes/classes/Admin/Admin_Fields.php:229
+#: includes/classes/Frontend/Popup_Manager.php:117
+msgid "Price"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:120
+#: includes/classes/Admin/Admin_Fields.php:121
+msgid "Quick view"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:84
+#: includes/classes/Admin/Dashboard.php:85
+msgid "QuickSwish"
+msgstr ""
+
+#. Name of the plugin
+msgid "QuickSwish - WooCommerce product quick view"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:455
+msgid "QuickSwish Settings"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:220
+#: includes/classes/Admin/Admin_Fields.php:228
+#: includes/classes/Frontend/Popup_Manager.php:116
+msgid "Rating"
+msgstr ""
+
+#: includes/templates/quickswish-social-share.php:32
+#: includes/classes/Admin/Admin_Fields.php:294
+msgid "Reddit"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:143
+msgid "Remove"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:385
+#: includes/classes/Admin/Admin_Fields.php:399
+#: includes/classes/Admin/Admin_Fields.php:413
+msgid "Right"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:215
+msgid "Select content to show"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:69
+#: includes/classes/Admin/Dashboard.php:145
+#: includes/classes/Admin/Dashboard.php:146
+msgid "Settings"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:279
+msgid "Share"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:278
+msgid "Share:"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:160
+msgid "Single Image"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:159
+msgid "Slider"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:183
+msgid "Slider arrow background"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:175
+msgid "Slider arrow color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:199
+msgid "Slider arrow hover background"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:191
+msgid "Slider arrow hover color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:246
+msgid "Social share button"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:262
+msgid "Social share button display from"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:275
+msgid "Social share button title"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:71
+msgid "Style Settings"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:470
+msgid "Successfully Settings Saved."
+msgstr ""
+
+#: includes/templates/quickswish-social-share.php:36
+#: includes/templates/quickswish-social-share.php:59
+#: includes/classes/Admin/Admin_Fields.php:295
+#: includes/classes/Admin/Admin_Fields.php:305
+msgid "Telegram"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:161
+#: includes/classes/Admin/Admin_Fields.php:268
+#: includes/classes/Admin/Admin_Fields.php:322
+msgid "Theme"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:154
+msgid "Thumbnail layout"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:219
+#: includes/classes/Admin/Admin_Fields.php:227
+#: includes/classes/Frontend/Popup_Manager.php:115
+msgid "Title"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:384
+#: includes/classes/Admin/Admin_Fields.php:398
+#: includes/classes/Admin/Admin_Fields.php:412
+msgid "Top"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:109
+msgid "Top On Image"
+msgstr ""
+
+#: includes/templates/quickswish-social-share.php:16
+#: includes/templates/quickswish-social-share.php:56
+#: includes/classes/Admin/Admin_Fields.php:290
+#: includes/classes/Admin/Admin_Fields.php:302
+msgid "Twitter"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:388
+#: includes/classes/Admin/Admin_Fields.php:402
+#: includes/classes/Admin/Admin_Fields.php:416
+msgid "Unit"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:142
+msgid "Upload"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:145
+msgid "Upload you custom icon from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:110
+msgid "Use Shortcode"
+msgstr ""
+
+#: includes/templates/quickswish-social-share.php:48
+#: includes/classes/Admin/Admin_Fields.php:298
+msgid "VK"
+msgstr ""
+
+#: includes/templates/quickswish-social-share.php:44
+#: includes/classes/Admin/Admin_Fields.php:297
+msgid "WhatsApp"
+msgstr ""
+
+#. Description of the plugin
+msgid "WooCommerce Product quick view WordPress plugin"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:433
+msgid "You can manage popup window width from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:286
+msgid "You can manage your social share buttons."
+msgstr ""
