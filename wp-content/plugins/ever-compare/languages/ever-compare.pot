@@ -1,0 +1,1141 @@
+# Copyright (C) 2026 HasTheme
+# This file is distributed under the GPL2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ever Compare 1.3.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ever-compare\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-04-02T10:15:17+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: ever-compare\n"
+
+#. Plugin Name of the plugin
+#: ever-compare.php
+#: includes/classes/Admin/Dashboard.php:113
+#: includes/classes/Admin/Dashboard.php:114
+msgid "Ever Compare"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: ever-compare.php
+msgid "https://hasthemes.com/plugins/"
+msgstr ""
+
+#. Description of the plugin
+#: ever-compare.php
+msgid "WooCommerce Product compare plugin"
+msgstr ""
+
+#. Author of the plugin
+#: ever-compare.php
+#: includes/classes/Admin/Recommended_Plugins.php:234
+msgid "HasTheme"
+msgstr ""
+
+#. Author URI of the plugin
+#: ever-compare.php
+msgid "https://hasthemes.com/"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:50
+msgid "General Settings"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:55
+msgid "Button Settings"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:60
+msgid "Table Settings"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:64
+msgid "Style Settings"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:80
+msgid "Show successful notification"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:83
+msgid "Enable this option to display a notification when a client adds or removes a product from the compare."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:88
+msgid "\"Product added to compare\" Text"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:90
+msgid "{product_name} added to compare."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:91
+#: includes/classes/Admin/Admin_Fields.php:99
+msgid "You can use the placeholder {product_name} to get the current product name."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:96
+msgid "\"Product removed from compare\" Text"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:98
+msgid "{product_name} removed from compare."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:104
+msgid "Remove Notification automatically after (seconds)"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:108
+msgid "If you wish to always display the notification, please input the value \"-1\"."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:117
+msgid "Show button in product list page"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:118
+msgid "Show compare button in product list page."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:125
+msgid "Show button in single product page"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:126
+msgid "Show compare button in single product page."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:133
+msgid "Remove product from compare on second click"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:136
+msgid "Remove the product from the compare if it has already been added."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:141
+msgid "Shop page button position"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:142
+msgid "You can manage compare button position in product list page."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:146
+#: includes/classes/Admin/Admin_Fields.php:193
+msgid "Before Add To Cart"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:147
+#: includes/classes/Admin/Admin_Fields.php:194
+msgid "After Add To Cart"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:148
+msgid "Top On Image"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:149
+#: includes/classes/Admin/Admin_Fields.php:197
+msgid "Use Shortcode"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:150
+#: includes/classes/Admin/Admin_Fields.php:198
+msgid "Custom Position"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:164
+msgid "Some themes remove the above positions. In that case, custom position is useful. Here you can place the custom/default hook name & priority to inject & adjust the compare button for the product loop."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:172
+#: includes/classes/Admin/Admin_Fields.php:220
+msgid "Hook name"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:173
+msgid "e.g: woocommerce_after_shop_loop_item_title"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:180
+#: includes/classes/Admin/Admin_Fields.php:228
+msgid "Hook priority"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:181
+#: includes/classes/Admin/Admin_Fields.php:229
+msgid "Default: 10"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:188
+msgid "Product page button position"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:189
+msgid "You can manage compare button position in single product page."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:195
+msgid "After Image"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:196
+msgid "After Summary"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:212
+msgid "Some themes remove the above positions. In that case, custom position is useful. Here you can place the custom/default hook name & priority to inject & adjust the compare button for the single product page."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:221
+msgid "e.g: woocommerce_after_single_product_summary"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:236
+msgid "Open popup"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:239
+msgid "You can manage the popup window from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:244
+msgid "Button text"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:245
+msgid "Enter your compare button text."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:247
+#: includes/classes/Admin/Admin_Fields.php:248
+#: includes/classes/Admin/Dashboard.php:94
+#: includes/classes/Admin/Dashboard.php:95
+msgid "Compare"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:253
+msgid "Added button text"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:254
+msgid "Enter your compare added button text."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:256
+#: includes/classes/Admin/Admin_Fields.php:257
+msgid "Added"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:262
+msgid "Remove button text"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:263
+msgid "Enter the compare remove button text."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:265
+#: includes/classes/Admin/Admin_Fields.php:266
+#: includes/classes/Admin/Admin_Fields.php:289
+#: includes/classes/Admin/Admin_Fields.php:314
+#: includes/classes/Admin/Settings_APi.php:478
+#: includes/classes/Frontend/Shortcode.php:63
+msgid "Remove"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:272
+msgid "Button icon type"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:273
+msgid "Choose an icon type for the compare button from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:277
+#: includes/classes/Admin/Admin_Fields.php:302
+msgid "None"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:278
+#: includes/classes/Admin/Admin_Fields.php:303
+#: includes/classes/Admin/Admin_Fields.php:472
+#: includes/classes/Admin/Admin_Fields.php:485
+#: includes/classes/Admin/Admin_Fields.php:497
+msgid "Default"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:279
+#: includes/classes/Admin/Admin_Fields.php:304
+#: includes/classes/Admin/Admin_Fields.php:474
+#: includes/classes/Admin/Admin_Fields.php:486
+#: includes/classes/Admin/Admin_Fields.php:498
+msgid "Custom"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:285
+msgid "Button custom icon"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:288
+#: includes/classes/Admin/Admin_Fields.php:313
+msgid "Upload"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:291
+msgid "Upload you custom icon from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:297
+msgid "Added button icon type"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:298
+msgid "Choose an icon for the compare button from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:310
+msgid "Added button custom icon"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:325
+msgid "Compare page"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:334
+msgid "Enable shareable link"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:337
+msgid "If you enable this you can easily share your compare page link with specific products."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:342
+msgid "Share link button position"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:346
+#: includes/classes/Admin/Admin_Fields.php:550
+#: includes/classes/Admin/Admin_Fields.php:564
+#: includes/classes/Admin/Admin_Fields.php:578
+#: includes/classes/Admin/Admin_Fields.php:599
+#: includes/classes/Admin/Admin_Fields.php:629
+msgid "Left"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:347
+msgid "Center"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:348
+#: includes/classes/Admin/Admin_Fields.php:548
+#: includes/classes/Admin/Admin_Fields.php:562
+#: includes/classes/Admin/Admin_Fields.php:576
+#: includes/classes/Admin/Admin_Fields.php:597
+#: includes/classes/Admin/Admin_Fields.php:627
+msgid "Right"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:355
+msgid "Share link button text"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:356
+#: includes/classes/Frontend/Manage_Compare.php:205
+msgid "Copy shareable link"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:363
+msgid "Text to show after link is copied"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:364
+#: includes/classes/Frontend/Manage_Compare.php:206
+msgid "Copied"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:371
+msgid "Limit"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:372
+msgid "You can manage your maximum compare quantity from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:383
+msgid "Show fields in table"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:384
+msgid "Choose which fields should be presented on the product compare page with table."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:388
+#: includes/classes/Frontend/Manage_Compare.php:417
+msgid "title"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:389
+#: includes/classes/Frontend/Manage_Compare.php:418
+#: includes/helper-functions.php:115
+msgid "Rating"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:390
+#: includes/classes/Frontend/Manage_Compare.php:419
+msgid "price"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:391
+#: includes/classes/Frontend/Manage_Compare.php:420
+msgid "add_to_cart"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:392
+#: includes/classes/Frontend/Manage_Compare.php:421
+msgid "description"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:393
+#: includes/classes/Frontend/Manage_Compare.php:422
+msgid "availability"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:394
+#: includes/classes/Frontend/Manage_Compare.php:423
+msgid "sku"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:395
+#: includes/classes/Frontend/Manage_Compare.php:424
+msgid "weight"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:396
+#: includes/classes/Frontend/Manage_Compare.php:425
+msgid "dimensions"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:402
+msgid "Custom heading"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:410
+msgid "Fields heading text"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:411
+msgid "You can change heading text from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:418
+msgid "Reached maximum limit message"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:419
+msgid "You can manage message for maximum product added in the compare table."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:425
+msgid "Empty compare page text"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:426
+msgid "Text will be displayed if user don't add any products to compare"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:432
+msgid "Return to shop button text"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:433
+msgid "Enter your return to shop button text."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:435
+#: includes/classes/Admin/Admin_Fields.php:436
+msgid "Return to shop"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:441
+msgid "Image size"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:442
+msgid "Enter your required image size."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:445
+msgid "Width"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:446
+msgid "Height"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:456
+msgid "Image Hard Crop"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:467
+msgid "Button style"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:468
+msgid "Choose a style for the compare button from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:473
+msgid "Theme"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:480
+msgid "Table style"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:481
+msgid "Choose a table style from here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:492
+msgid "Notification style"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:493
+msgid "Choose a style for the compare notification here."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:504
+msgid "Button custom style"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:512
+msgid "Color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:513
+msgid "Set the color of the button."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:520
+msgid "Hover Color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:521
+msgid "Set the hover color of the button."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:528
+#: includes/classes/Admin/Admin_Fields.php:709
+msgid "Background Color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:529
+msgid "Set the background color of the button."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:536
+msgid "Hover Background Color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:537
+msgid "Set the hover background color of the button."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:544
+msgid "Padding"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:547
+#: includes/classes/Admin/Admin_Fields.php:561
+#: includes/classes/Admin/Admin_Fields.php:575
+#: includes/classes/Admin/Admin_Fields.php:596
+#: includes/classes/Admin/Admin_Fields.php:626
+msgid "Top"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:549
+#: includes/classes/Admin/Admin_Fields.php:563
+#: includes/classes/Admin/Admin_Fields.php:577
+#: includes/classes/Admin/Admin_Fields.php:598
+#: includes/classes/Admin/Admin_Fields.php:628
+msgid "Bottom"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:551
+#: includes/classes/Admin/Admin_Fields.php:565
+#: includes/classes/Admin/Admin_Fields.php:579
+#: includes/classes/Admin/Admin_Fields.php:600
+#: includes/classes/Admin/Admin_Fields.php:630
+msgid "Unit"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:558
+msgid "Margin"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:572
+msgid "Border width"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:585
+#: includes/classes/Admin/Admin_Fields.php:716
+msgid "Border Color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:586
+msgid "Set the border color of the button."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:593
+msgid "Border Radius"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:607
+msgid "Table custom style"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:615
+msgid "Border color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:616
+msgid "Set the border color of the table."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:623
+msgid "Column Padding"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:637
+msgid "Column background color (Event)"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:638
+msgid "Set the background color of the table event column."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:645
+msgid "Column background color (Odd)"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:646
+msgid "Set the background color of the table odd column."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:653
+msgid "Heading color (Event)"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:654
+msgid "Set the heading color of the table event column."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:661
+msgid "Heading color (Odd)"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:662
+msgid "Set the heading color of the table odd column."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:669
+msgid "Content color (Event)"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:670
+msgid "Set the content color of the table event column."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:677
+msgid "Content color (Odd)"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:678
+msgid "Set the content color of the table odd column."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:685
+msgid "Content link color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:686
+msgid "Set the content link color of the table."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:693
+msgid "Content link hover color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:694
+msgid "Set the content link hover color of the table."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:701
+msgid "Notification custom style"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:710
+msgid "Set the background color of the notification."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:717
+msgid "Set the border color of the notification."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:723
+msgid "Content Color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:724
+msgid "Set the content color of the notification."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:730
+msgid "Close Button Color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:731
+msgid "Set the close button color of the notification."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:737
+msgid "Close Button Hover Color"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:738
+msgid "Set the close button hover color of the notification."
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:752
+msgid "Compare Settings"
+msgstr ""
+
+#: includes/classes/Admin/Admin_Fields.php:763
+msgid "Successfully Settings Saved."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:80
+#: includes/classes/Admin/Dashboard.php:174
+#: includes/classes/Admin/Dashboard.php:175
+msgid "Settings"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:206
+#: includes/classes/Installer.php:50
+msgid "EverCompare"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:231
+msgid "Recommended"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:238
+msgid "WooLentor"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:244
+msgid "HT Mega"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:250
+msgid "HashBar"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:256
+msgid "HT Slider For Elementor"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:262
+msgid "HT Contact Form 7"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:268
+msgid "HT WPForms"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:274
+msgid "HT Menu"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:280
+msgid "HT Script"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:286
+msgid "WP Plugin Manager"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:292
+msgid "WC Builder"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:298
+msgid "Whols"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:304
+msgid "JustTables"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:310
+msgid "Multi Currency"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:317
+msgid "You May Also Like"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:323
+msgid "WooLentor Pro"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:326
+msgid "WooLentor is one of the most popular WooCommerce Elementor Addons on WordPress.org. It has been downloaded more than 672,148 times and 60,000 stores are using WooLentor plugin. Why not you?"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:332
+msgid "HT Mega Pro"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:335
+msgid "HTMega is an absolute addon for elementor that includes 80+ elements & 360 Blocks with unlimited variations. HT Mega brings limitless possibilities. Embellish your site with the elements of HT Mega."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:341
+msgid "Product Variation Swatches"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:344
+msgid "Are you getting frustrated with WooCommerce’s current way of presenting the variants for your products? Well, say goodbye to dropdowns and start showing the product variations in a whole new light with Swatchly."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:350
+msgid "Whols Pro"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:353
+msgid "Whols is an outstanding WordPress plugin for WooCommerce that allows store owners to set wholesale prices for the products of their online stores. This plugin enables you to show special wholesale prices to the wholesaler. Users can easily request to become a wholesale customer by filling out a simple online registration form. Once the registration is complete, the owner of the store will be able to review the request and approve the request either manually or automatically."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:359
+msgid "JustTables Pro"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:362
+msgid "JustTables is an incredible WordPress plugin that lets you showcase all your WooCommerce products in a sortable and filterable table view. It allows your customers to easily navigate through different attributes of the products and compare them on a single page. This plugin will be of great help if you are looking for an easy solution that increases the chances of landing a sale on your online store."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:368
+msgid "Multi Currency Pro for WooCommerce"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:371
+msgid "Multi-Currency Pro for WooCommerce is a prominent currency switcher plugin for WooCommerce. This plugin allows your website or online store visitors to switch to their preferred currency or their country’s currency."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:377
+msgid "Extensions For CF7 Pro"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:380
+msgid "Contact Form7 Extensions plugin is a fantastic WordPress plugin that enriches the functionalities of Contact Form 7.This all-in-one WordPress plugin will help you turn any contact page into a well-organized, engaging tool for communicating with your website visitors by providing tons of advanced features like drag and drop file upload, repeater field, trigger error for already submitted forms, popup form response, country flags and dial codes with a telephone input field and acceptance field, etc. in addition to its basic features."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:386
+msgid "HashBar Pro"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:389
+msgid "HashBar is a WordPress Notification / Alert / Offer Bar plugin which allows you to create unlimited notification bars to notify your customers. This plugin has option to show email subscription form (sometimes it increases up to 500% email subscriber), Offer text and buttons about your promotions. This plugin has the options to add unlimited background colors and images to make your notification bar more professional."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:395
+msgid "WP Plugin Manager Pro"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:398
+msgid "WP Plugin Manager Pro is a specialized WordPress Plugin that helps you to deactivate unnecessary WordPress Plugins page wise and boosts the speed of your WordPress site to improve the overall site performance."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:404
+msgid "HT Script Pro"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:407
+msgid "Insert Headers and Footers Code allows you to insert Google Analytics, Facebook Pixel, custom CSS, custom HTML, JavaScript code to your website header and footer without modifying your theme code.This plugin has the option to add any custom code to your theme in one place, no need to edit the theme code. It will save your time and remove the hassle for the theme update."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:413
+msgid "HT Menu Pro"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:416
+msgid "WordPress Mega Menu Builder for Elementor"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:422
+msgid "HT Slider Pro For Elementor"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:425
+msgid "HT Slider Pro is a plugin to create a slider for WordPress websites easily using the Elementor page builder. 80+ prebuild slides/templates are included in this plugin. There is the option to create a post slider, WooCommerce product slider, Video slider, image slider, etc. Fullscreen, full width and box layout option are included."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:431
+msgid "Google Place Review"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:434
+msgid "If you are searching for a modern and excellent google places review WordPress plugin to showcase reviews from Google Maps and strengthen trust between you and your site visitors, look no further than HT Google Place Review"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:440
+msgid "Was This Helpful?"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:443
+msgid "Was this helpful? is a WordPress plugin that allows you to take visitors' feedback on your post/pages or any article. A visitor can share his feedback by like/dislike/yes/no"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:449
+msgid "HT Click To Call"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:452
+msgid "HT – Click to Call is a lightweight WordPress plugin that allows you to add a floating click to call button on your website. It will offer your website visitors an opportunity to call your business immediately at the right moment, especially when they are interested in your products or services and seeking more information."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:458
+msgid "Docus Pro"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:461
+msgid "Embedding a YouTube playlist into your website plays a vital role to curate your content into several categories and make your web content more engaging and popular by keeping the visitors on your website for a longer period."
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:468
+msgid "Others"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:474
+msgid "Really Simple Google Tag Manager"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:480
+msgid "HT Feed"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:486
+msgid "Faster YouTube Embed"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:492
+msgid "WC Sales Notification"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:498
+msgid "Preview Link Generator"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:504
+msgid "QuickSwish"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:510
+msgid "Docus – YouTube Video Playlist"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:516
+msgid "DataCaptia"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:522
+msgid "Coupon Zen"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:528
+msgid "Sirve – Simple Directory Listing"
+msgstr ""
+
+#: includes/classes/Admin/Dashboard.php:534
+msgid "HT Social Share"
+msgstr ""
+
+#. translators: %1$s: strong tag start translators: %2$s: strong tag end
+#: includes/classes/Admin/Notices.php:57
+#, php-format
+msgid "%1$sEver Compare%2$s requires %1$s\"WooCommerce\"%2$s plugin to be active. Please activate WooCommerce to continue."
+msgstr ""
+
+#: includes/classes/Admin/Notices.php:58
+msgid "Activate WooCommerce"
+msgstr ""
+
+#. translators: %1$s: strong tag start translators: %2$s: strong tag end
+#: includes/classes/Admin/Notices.php:68
+#, php-format
+msgid "%1$sEver Compare%2$s requires %1$s\"WooCommerce\"%2$s plugin to be installed and activated. Please install WooCommerce to continue."
+msgstr ""
+
+#: includes/classes/Admin/Notices.php:69
+msgid "Install WooCommerce"
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:71
+msgid "Recommendations"
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:129
+#: includes/classes/Admin/Recommended_Plugins.php:237
+#: includes/classes/Admin/Recommended_Plugins.php:291
+msgid "Buy Now"
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:130
+msgid "Preview"
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:131
+msgid "Installing.."
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:132
+msgid "Activating.."
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:133
+#: includes/classes/Admin/Recommended_Plugins.php:260
+msgid "Activated"
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:249
+msgid "Activate"
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:255
+msgid "Install Now"
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:277
+msgid "By "
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:299
+msgid "More Details"
+msgstr ""
+
+#. translators: %s: Number of installations.
+#: includes/classes/Admin/Recommended_Plugins.php:304
+#, php-format
+msgid "%s Active Installations"
+msgstr ""
+
+#. translators: %s: Number of millions.
+#: includes/classes/Admin/Recommended_Plugins.php:378
+#, php-format
+msgctxt "Active plugin installations"
+msgid "%s+ Million"
+msgid_plural "%s+ Million"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:382
+msgctxt "Active plugin installations"
+msgid "Less Than 10"
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:402
+msgid "Plugin Not Found"
+msgstr ""
+
+#: includes/classes/Admin/Recommended_Plugins.php:422
+msgid "Plugin Successfully Activated"
+msgstr ""
+
+#: includes/classes/Admin/Settings_APi.php:312
+msgid "Check All"
+msgstr ""
+
+#: includes/classes/Admin/Settings_APi.php:458
+#: includes/classes/Admin/Settings_APi.php:477
+msgid "Choose File"
+msgstr ""
+
+#: includes/classes/Assets.php:116
+msgid "{product_name} added to compare list."
+msgstr ""
+
+#: includes/classes/Assets.php:117
+msgid "{product_name} removed from compare list."
+msgstr ""
+
+#: includes/classes/Frontend/Manage_Compare.php:168
+msgid "Close compare popup"
+msgstr ""
+
+#: includes/classes/Frontend/Manage_Compare.php:180
+msgid "You are already added the maximum number of products."
+msgstr ""
+
+#. translators: %s: product title
+#: includes/classes/Frontend/Manage_Compare.php:473
+#, php-format
+msgid "Remove %s from compare"
+msgstr ""
+
+#: includes/classes/Frontend/Manage_Compare.php:568
+msgid "In stock"
+msgstr ""
+
+#: includes/classes/Frontend/Manage_Compare.php:645
+msgid "You have already added the maximum number of products."
+msgstr ""
+
+#: includes/classes/Installer.php:48
+msgctxt "page_slug"
+msgid "ever-compare"
+msgstr ""
+
+#: includes/helper-functions.php:45
+msgid "Select"
+msgstr ""
+
+#: includes/helper-functions.php:114
+msgid "Title"
+msgstr ""
+
+#: includes/helper-functions.php:116
+msgid "Price"
+msgstr ""
+
+#: includes/helper-functions.php:117
+msgid "Add To Cart"
+msgstr ""
+
+#: includes/helper-functions.php:118
+msgid "Description"
+msgstr ""
+
+#: includes/helper-functions.php:119
+msgid "Availability"
+msgstr ""
+
+#: includes/helper-functions.php:120
+msgid "Sku"
+msgstr ""
+
+#: includes/helper-functions.php:121
+msgid "Weight"
+msgstr ""
+
+#: includes/helper-functions.php:122
+msgid "Dimensions"
+msgstr ""

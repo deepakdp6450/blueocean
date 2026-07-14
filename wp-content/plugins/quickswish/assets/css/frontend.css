@@ -1,0 +1,274 @@
+/* Button Style */
+a.quickswish-btn-pos-top_thumbnail{
+    position: absolute !important;
+    top: 0;
+    left: 8px !important;
+    z-index: 9;
+}
+
+.quickswish-btn {
+    display: inline-flex !important;
+    align-items: center;
+    position: relative !important;
+}
+.quickswish-btn svg {
+    fill:currentColor;
+    transition: all 200ms ease-out;
+    width: 23px;
+    height: 20px;
+    margin-right: 5px;
+}
+.quickswish-btn svg .quickswish-loading{
+    opacity: 0;
+}
+.quickswish-btn.loading svg .quickswish-loading{
+    opacity: 1;
+}
+.quickswish-btn.loading svg .quickswish-eye-icon{
+    opacity: 0;
+}
+
+.quickswish-btn-image{
+    width: 25px;
+    margin-right: 5px;
+}
+.quickswish-btn-image img{
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.quickswish-btn::after,.woocommerce a.button.quickswish-btn::after{
+    display: none;
+}
+.quickswish-btn.loading svg .quickswish-loading {
+    animation:loading 500ms 0ms infinite normal linear;
+    transform-origin: center;
+    opacity: 1;
+}
+@keyframes loading {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.quickswish-loader {
+    position: absolute;
+    left: 0;
+    top: auto;
+}
+.quickswish-btn-icon-none.loading {
+    padding-right: 30px;
+}
+.quickswish-btn-icon-none .quickswish-loader{
+    left: auto;
+    right: 0;
+}
+
+/* Modal Style */
+.quickswish-modal{
+    position: fixed;
+    z-index: 1043;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding-right: 17px;
+    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.quickswish-modal.quickswish-open{
+	visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 1024 !important;
+}
+
+.quickswish-modal .quickswish-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.quickswish-modal-wrapper {
+    width: calc(100% - 30px);
+    max-width: 1200px;
+    margin: auto !important;
+}
+.quickswish-modal-content {
+    position: relative;
+    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.quickswish-modal.quickswish-open .quickswish-modal-content {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+.quickswish-content-area{}
+.quickswish-custom-scroll {
+    padding: 25px 25px 0 0;
+}
+.quickswish-custom-scroll .summary-content{
+	max-height: 550px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.quickswish-custom-scroll .summary-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.quickswish-custom-scroll .summary-content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.quickswish-custom-scroll .summary-content::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+.quickswish-custom-scroll .summary-content::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+span.quickswish-modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 50px;
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 0;
+    z-index: 9;
+    transition: 0.4s;
+}
+span.quickswish-modal-close:hover{
+	color: #FF0000;
+}
+.quickswish-content-area.woocommerce div.product div.summary,.quickswish-content-area.woocommerce div.product div.images{
+	margin-bottom: 0;
+}
+.quickswish-content-area.woocommerce div.product div.images img{
+	display: inline-block;
+}
+.quickswish-modal .quickswish-content-area.woocommerce div.images {
+    width: 40%;
+    float: left;
+    opacity: 1 !important;
+    margin-right: 0;
+}
+.quickswish-modal .quickswish-content-area.woocommerce div.summary {
+    width: 60%;
+    float: left;
+    padding: 15px;
+    padding-left: 25px;
+    padding-top: 0;
+}
+/* Social Media Share */
+.quickswish-social-share {
+    display: flex;
+    align-items: center;
+}
+.quickswish-social-share .quickswish-social-title{}
+.quickswish-social-share ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.quickswish-social-share ul li{
+    display: inline-block;
+}
+.quickswish-social-share ul li a{
+    display: block;
+    line-height: 1;
+    padding: 5px;
+    color: #3a3a3a;
+}
+.quickswish-social-share ul li a .quickswish-social-icon{}
+.quickswish-social-share ul li a .quickswish-social-icon svg{
+    fill:currentColor;
+    width: 15px;
+    height: 15px;
+}
+
+/* Custom image */
+.quickswish-thumb-single {
+    width: 25%;
+    float: left;
+    padding: 0 2.5px;
+    cursor: pointer;
+}
+.quickswish-thumbnail-slider {
+    margin: 5px -2px 0 -2px;
+}
+
+.quickswish-thumbnail-slider span.slick-arrow,.quickswish-main-image-slider span.slick-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 25px;
+    z-index: 9;
+    height: 25px;
+    text-align: center;
+    background: #0274be;
+    line-height: 22px;
+    font-size: 22px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.quickswish-main-image-slider span.slick-arrow{
+    width: 30px;
+    height: 30px;
+    line-height: 27px;
+}
+.quickswish-thumbnail-slider span.slick-arrow.quickswish-slick-next,.quickswish-main-image-slider span.slick-arrow.quickswish-slick-next {
+    left: auto;
+    right: 0;
+}
+.quickswish-thumbnail-slider:hover span.slick-arrow,.quickswish-main-image-slider:hover span.slick-arrow{
+    opacity: 1;
+    visibility: visible;
+}
+.slick-current.slick-active .quickswish-thumb-single img {
+    border: 1px solid #0274be;
+}
+
+@media (max-width: 767px) {
+
+    .quickswish-modal .quickswish-content-area.woocommerce div.images,.quickswish-modal .quickswish-content-area.woocommerce div.summary{
+        width: 100% !important;
+        float: none !important;
+    }
+    .quickswish-modal-wrapper{
+        overflow-y:auto; 
+    }
+    .quickswish-social-share ul {
+        display: block;
+    }
+
+}

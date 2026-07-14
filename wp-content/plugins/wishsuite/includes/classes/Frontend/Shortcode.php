@@ -1,0 +1,337 @@
+<?php
+namespace WishSuite\Frontend;
+if ( ! defined( 'ABSPATH' ) ) exit;
+/**
+ * Shortcode handler class
+ */
+class Shortcode {
+
+    /**
+     * [$_instance]
+     * @var null
+     */
+    private static $_instance = null;
+
+    /**
+     * [instance] Initializes a singleton instance
+     * @return [Base]
+     */
+    public static function instance() {
+        if ( is_null( self::$_instance ) ) {
+            self::$_instance = new self();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Initializes the class
+     */
+    function __construct() {
+        add_shortcode( 'wishsuite_button', [ $this, 'button_shortcode' ] );
+        add_shortcode( 'wishsuite_table', [ $this, 'table_shortcode' ] );
+        add_shortcode( 'wishsuite_counter', [ $this, 'counter_shortcode' ] );
+    }
+
+    /**
+     * [button_shortcode] Button Shortcode callable function
+     * @param  [type] $atts 
+     * @param  string $content
+     * @return [HTML] 
+     */
+    public function button_shortcode( $atts, $content = '' ){
+        wp_enqueue_style( 'wishsuite-frontend' );
+        wp_enqueue_script( 'wishsuite-frontend' );
+
+        global $product;
+        $product_id = '';
+        $product_title = '';
+        if ( $product && is_a( $product, 'WC_Product' ) ) {
+            $product_id = $product->get_id();
+            $product_title = $product->get_name();
+        } else if (get_post_type(get_the_ID()) === 'product') {
+            $product_id = get_the_ID();
+            $product_title = get_the_title($product_id);
+        }
+
+        $has_product = false;
+        if ( Manage_Wishlist::instance()->is_product_in_wishlist( $product_id ) ) {
+            $has_product = true;
+        }
+
+        //my account url
+        $myaccount_url =  get_permalink( get_option('woocommerce_myaccount_page_id') );
+
+        // Fetch option data
+        $button_text        = wishsuite_get_option( 'button_text','wishsuite_settings_tabs', 'Wishlist' );
+        $button_text        = empty( $button_text ) ? __( 'Wishlist', 'wishsuite' ) : $button_text;
+        $button_added_text  = wishsuite_get_option( 'added_button_text','wishsuite_settings_tabs', 'Product Added' );
+        $button_added_text  = empty( $button_added_text ) ? __( 'Product Added', 'wishsuite' ) : $button_added_text;
+        $button_exist_text  = wishsuite_get_option( 'exist_button_text','wishsuite_settings_tabs', 'Product already added' );
+        $button_exist_text  = empty( $button_exist_text ) ? __( 'Product already added', 'wishsuite' ) : $button_exist_text;
+        $shop_page_btn_position     = wishsuite_get_option( 'shop_btn_position', 'wishsuite_settings_tabs', 'after_cart_btn' );
+        $product_page_btn_position  = wishsuite_get_option( 'product_btn_position', 'wishsuite_settings_tabs', 'after_cart_btn' );
+        $button_style               = wishsuite_get_option( 'button_style', 'wishsuite_style_settings_tabs', 'default' );
+        $enable_login_limit = wishsuite_get_option( 'enable_login_limit', 'wishsuite_general_tabs', 'off' );
+        $remove_on_click = wishsuite_get_option( 'remove_on_click', 'wishsuite_settings_tabs', 'off' );
+        $remove_button_text = wishsuite_get_option( 'remove_button_text', 'wishsuite_settings_tabs', 'Remove from wishlist' );
+        $remove_button_text =  empty($remove_button_text) ? __('Remove from wishlist', 'wishsuite') : $remove_button_text;
+
+        if ( !is_user_logged_in() && $enable_login_limit == 'on' ) {
+            $button_text   = wishsuite_get_option( 'logout_button','wishsuite_general_tabs', 'Please login' );
+            $page_url      = $myaccount_url;
+            $has_product   = false;
+        }else{
+            $button_text = wishsuite_get_option( 'button_text','wishsuite_settings_tabs', 'Wishlist' );
+            $button_text = empty( $button_text ) ? __( 'Wishlist', 'wishsuite' ) : $button_text;
+            $page_url = wishsuite_get_page_url();
+        }
+
+        $button_class = array(
+            'wishsuite-btn',
+            'wishsuite-button',
+        );
+
+        // Context-aware classes: shop class only in loops, product class on single product pages
+        $is_single_product = is_product() || is_singular( 'product' );
+        $in_loop = wc_get_loop_prop( 'name' ) || doing_action( 'woocommerce_after_shop_loop_item' ) || doing_action( 'woocommerce_before_shop_loop_item' );
+
+        if ( $is_single_product && ! $in_loop ) {
+            // Single product page (not in a loop) - use product class only
+            $button_class[] = 'wishsuite-product-'.esc_attr($product_page_btn_position);
+        } else {
+            // In a product loop (shop, archives, related products) - use shop class only
+            $button_class[] = 'wishsuite-shop-'.esc_attr($shop_page_btn_position);
+        }
+
+        if( $button_style === 'themestyle' ){
+            $button_class[] = 'button';
+        }
+
+        if ( $has_product === true && ( $key = array_search( 'wishsuite-btn', $button_class ) ) !== false ) {
+            unset( $button_class[$key] );
+        }
+
+
+        $button_icon        = $this->icon_generate();
+        $added_button_icon  = $this->icon_generate('added');
+        
+        if( !empty( $button_text ) ){
+            $button_text = '<span class="wishsuite-btn-text">'.wp_kses_post($button_text).'</span>';
+        }
+        
+        if($remove_on_click === 'off' ){
+            if(!empty( $button_exist_text )){
+                $button_exist_text = '<span class="wishsuite-btn-text">'.wp_kses_post($button_exist_text).'</span>';
+            }
+        } else {
+            $button_exist_text = '<span class="wishsuite-btn-text">'.wp_kses_post($remove_button_text).'</span>';
+        }
+        
+        if($remove_on_click === 'off' ){
+            if(!empty( $button_added_text )){
+                $button_added_text = '<span class="wishsuite-btn-text">'.wp_kses_post($button_added_text).'</span>';
+            }
+        } else {
+            $button_added_text = '<span class="wishsuite-btn-text">'.wp_kses_post($remove_button_text).'</span>';
+        }
+
+        // Shortcode atts
+        $default_atts = array(
+            'product_id'        => $product_id,
+            'product_title'     => $product_title,
+            'button_url'        => $page_url,
+            'button_class'      => implode(' ', $button_class ),
+            'button_text'       => $button_icon.$button_text,
+            'button_added_text' => $added_button_icon.$button_added_text,
+            'button_exist_text' => $added_button_icon.$button_exist_text,
+            'has_product'       => $has_product,
+            'template_name'     => ( $has_product === true ) ? 'exist' : 'add',
+        );
+        $atts = shortcode_atts( $default_atts, $atts, $content );
+
+        // Sanitize shortcode attributes to prevent XSS
+        // Uses custom allowed HTML that includes SVG elements for button icons
+        $allowed_html = $this->get_allowed_button_html();
+        $atts['button_text'] = wp_kses( $atts['button_text'], $allowed_html );
+        $atts['button_added_text'] = wp_kses( $atts['button_added_text'], $allowed_html );
+        $atts['button_exist_text'] = wp_kses( $atts['button_exist_text'], $allowed_html );
+
+        return Manage_Wishlist::instance()->button_html( $atts );
+
+    }
+
+    /**
+     * [table_shortcode] Table List Shortcode callable function
+     * @param  [type] $atts
+     * @param  string $content
+     * @return [HTML] 
+     */
+    public function table_shortcode( $atts, $content = '' ){
+        wp_enqueue_style( 'wishsuite-frontend' );
+        wp_enqueue_script( 'wishsuite-frontend' );
+
+        $url_components = parse_url($_SERVER['REQUEST_URI']);
+        if(!empty($url_components['query'])) {
+            parse_str($url_components['query'], $params);
+        }
+        if(!empty($params['current_page'])) {
+            $current_page = $params['current_page'];
+        }
+        if(empty($current_page)) {
+            $current_page = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+        }
+
+        /* Fetch From option data */
+        $empty_text = wishsuite_get_option( 'empty_table_text', 'wishsuite_table_settings_tabs' );
+        $product_per_page = (int) wishsuite_get_option( 'wishlist_product_per_page', 'wishsuite_table_settings_tabs', 20 );
+
+        /* Product and Field */
+        $products   = Manage_Wishlist::instance()->get_products_data( $product_per_page, $current_page );
+        if($current_page > 1 && count($products) <= 0) {
+            $products   = Manage_Wishlist::instance()->get_products_data( $product_per_page, $current_page - 1 );
+        }
+        $fields     = Manage_Wishlist::instance()->get_all_fields();
+
+        $custom_heading = !empty( wishsuite_get_option( 'table_heading', 'wishsuite_table_settings_tabs' ) ) ? wishsuite_get_option( 'table_heading', 'wishsuite_table_settings_tabs' ) : array();
+        $enable_login_limit = wishsuite_get_option( 'enable_login_limit', 'wishsuite_general_tabs', 'off' );
+
+        $default_atts = array(
+            'wishsuite'    => Manage_Wishlist::instance(),
+            'products'     => $products,
+            'fields'       => $fields,
+            'heading_txt'  => $custom_heading,
+            'empty_text'   => !empty( $empty_text ) ? $empty_text : '',
+        );
+
+        if ( !is_user_logged_in() && $enable_login_limit == 'on' ) {
+            return do_shortcode('[woocommerce_my_account]');
+        }else{
+            $atts = shortcode_atts( $default_atts, $atts, $content );
+            return Manage_Wishlist::instance()->table_html( $atts );
+        }
+    }
+
+    /**
+     * WishList Counter Shortcode
+     *
+     * @param [array] $atts
+     * @param string $content
+     * @return void
+     */
+    public function counter_shortcode( $atts, $content = '' ){
+        wp_enqueue_style( 'wishsuite-frontend' );
+
+        $enable_login_limit = wishsuite_get_option( 'enable_login_limit', 'wishsuite_general_tabs', 'off' );
+        $myaccount_url =  get_permalink( get_option('woocommerce_myaccount_page_id') );
+
+        $products   = Manage_Wishlist::instance()->get_products_data();
+        if ( !is_user_logged_in() && $enable_login_limit == 'on' ) {
+            $button_text   = wishsuite_get_option( 'logout_button','wishsuite_general_tabs', 'Please login' );
+            $page_url      = $myaccount_url;
+            $has_product   = false;
+        }else{
+            $button_text = wishsuite_get_option( 'button_text','wishsuite_settings_tabs', 'Wishlist' );
+            $page_url = wishsuite_get_page_url();
+        }
+
+        $default_atts = array(
+            'products'      => $products,
+            'item_count'    => count($products),
+            'page_url'      => $page_url,
+            'text'          => '',
+        );
+
+        $atts = shortcode_atts( $default_atts, $atts, $content );
+        return Manage_Wishlist::instance()->count_html( $atts );
+
+    }
+
+    /**
+     * [icon_generate]
+     * @param  string $type
+     * @return [HTML]
+     */
+    public function icon_generate( $type = '' ){
+
+        $default_icon   = wishsuite_icon_list('default');
+        $default_loader = '<span class="wishsuite-loader">'.wishsuite_icon_list('loading').'</span>';
+
+        // Solid-heart (added state) modifier for the default icon.
+        // Heart colors are applied via inline_style() CSS (gated to custom button style).
+        $solid_added = ( 'on' === wishsuite_get_option( 'use_solid_heart', 'wishsuite_style_settings_tabs', 'off' ) );
+        $svg_class   = 'wishsuite-default-icon'.( $solid_added ? ' wishsuite-solid-added' : '' );
+        $default_icon = str_replace( '<svg ', '<svg class="'.esc_attr( $svg_class ).'" ', $default_icon );
+
+        $button_icon = '';
+        $button_text = ( $type === 'added' ) ? wishsuite_get_option( 'added_button_text','wishsuite_settings_tabs', 'Wishlist' ) : wishsuite_get_option( 'button_text','wishsuite_settings_tabs', 'Wishlist' );
+        $button_icon_type  = wishsuite_get_option( $type.'button_icon_type', 'wishsuite_style_settings_tabs', 'default' );
+
+        if( $button_icon_type === 'custom' ){
+            $button_icon = wishsuite_get_option( $type.'button_custom_icon','wishsuite_style_settings_tabs', '' );
+        }else{
+            if( $button_icon_type !== 'none' ){
+                return $default_icon;
+            }
+        }
+
+        if( !empty( $button_icon ) ){
+            $attachment_id = attachment_url_to_postid( $button_icon );
+            if( $attachment_id ){
+                // wp_get_attachment_image outputs explicit width/height (fixes PageSpeed "Image elements do not have explicit width and height").
+                $button_icon = wp_get_attachment_image( $attachment_id, 'full', false, array(
+                    'alt'   => $button_text,
+                    'class' => 'wishsuite-custom-icon',
+                ) );
+            } else {
+                // External/unresolved URL: fall back to size detection so width/height are still emitted.
+                $dimensions = @getimagesize( $button_icon );
+                $size_attr  = ( is_array( $dimensions ) && !empty( $dimensions[0] ) && !empty( $dimensions[1] ) )
+                    ? ' width="'.esc_attr( $dimensions[0] ).'" height="'.esc_attr( $dimensions[1] ).'"'
+                    : '';
+                $button_icon = '<img class="wishsuite-custom-icon" src="'.esc_url( $button_icon ).'" alt="'.esc_attr( $button_text ).'"'.$size_attr.'>';
+            }
+        }
+
+        return $button_icon.$default_loader;
+
+    }
+
+    /**
+     * Get allowed HTML tags for button text sanitization (includes SVG)
+     * @return array
+     */
+    private function get_allowed_button_html() {
+        $allowed = wp_kses_allowed_html( 'post' );
+
+        // Add SVG support for button icons
+        $svg_args = array(
+            'svg' => array(
+                'class'             => true,
+                'id'                => true,
+                'xmlns'             => true,
+                'width'             => true,
+                'height'            => true,
+                'viewbox'           => true,
+                'fill'              => true,
+                'stroke'            => true,
+                'stroke-width'      => true,
+                'style'             => true,
+                'enable-background' => true,
+            ),
+            'g' => array(
+                'class' => true,
+                'id'    => true,
+                'fill'  => true,
+            ),
+            'path' => array(
+                'class' => true,
+                'd'     => true,
+                'fill'  => true,
+            ),
+        );
+
+        return array_merge( $allowed, $svg_args );
+    }
+
+
+}

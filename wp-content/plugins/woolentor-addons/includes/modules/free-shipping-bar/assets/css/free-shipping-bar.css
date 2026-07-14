@@ -1,0 +1,228 @@
+/**
+ * WooLentor – Free Shipping Bar
+ */
+
+.wp-embed-responsive .wp-block {
+    outline: 0;
+}
+
+/* ── Wrapper ─────────────────────────────────────────────────────────────── */
+#wl-free-shipping-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 8px 48px 8px 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+/* Position helpers */
+#wl-free-shipping-bar.wl-fsb-top {
+    top: 0;
+}
+
+#wl-free-shipping-bar.wl-fsb-bottom {
+    bottom: 0;
+}
+
+/* Hidden state */
+#wl-free-shipping-bar.wl-fsb-hidden {
+    display: none;
+}
+
+/* ── Inner layout ────────────────────────────────────────────────────────── */
+.wl-fsb-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+/* ── Message ─────────────────────────────────────────────────────────────── */
+.wl-fsb-message {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+}
+
+/* ── Progress track ─────────────────────────────────────────────────────── */
+.wl-fsb-progress-track {
+    width: 100%;
+    max-width: 500px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+/* ── Progress fill ───────────────────────────────────────────────────────── */
+.wl-fsb-progress-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #4ade80;
+    border-radius: 99px;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Success state ───────────────────────────────────────────────────────── */
+#wl-free-shipping-bar.wl-fsb-complete .wl-fsb-progress-fill {
+    background-color: #4ade80;
+}
+
+#wl-free-shipping-bar.wl-fsb-complete .wl-fsb-message {
+    color: #d1fae5;
+}
+
+/* ── Close button ────────────────────────────────────────────────────────── */
+.wl-fsb-close {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.wl-fsb-close:hover,
+.wl-fsb-close:focus {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+    outline: none;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+    #wl-free-shipping-bar {
+        padding: 8px 40px 8px 12px;
+    }
+
+    .wl-fsb-message {
+        font-size: 12px;
+    }
+
+    .wl-fsb-progress-track {
+        max-width: 100%;
+    }
+}
+
+/*
+ * Body padding is applied via inline style by free-shipping-bar.js,
+ * calculated from the bar's actual rendered height + admin bar height.
+ * These rules exist only as a fallback in case JS is delayed.
+ */
+body.wl-fsb-top-active {
+    padding-top: 56px;
+}
+
+body.wl-fsb-bottom-active {
+    padding-bottom: 56px;
+}
+
+/* ── Inline mode (shortcode / widget / block) ────────────────────────────── */
+/*
+ * When the bar is placed via shortcode it must render in the normal document
+ * flow at the exact position the shortcode appears — not as a fixed overlay.
+ * JS detects this class and skips all fixed-positioning and body-offset logic.
+ */
+#wl-free-shipping-bar.wl-fsb-inline {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    z-index: auto;
+    width: 100%;
+}
+
+/* ── Widget layout ─────────────────────────────────────────────────── */
+.wl-fsb-widget {
+    position: relative;
+}
+
+.wl-fsb-widget .wl-fsb-inner {
+    max-width: 100%;
+}
+
+.wl-fsb-widget {
+    background-color: #ffffff;
+    border-radius: 8px 8px 8px 8px;
+    padding: 16px 20px 16px 20px;
+}
+
+.wl-fsb-widget .wl-fsb-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.wl-fsb-widget .wl-fsb-content {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+}
+
+.wl-fsb-widget .wl-fsb-icon {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    color: inherit;
+}
+
+.wl-fsb-widget .wl-fsb-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.wl-fsb-widget .wl-fsb-text {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wl-fsb-widget .wl-fsb-message,
+.wl-fsb-widget .wl-fsb-countdown {
+    color: #333;
+    text-align: left;
+}
+
+.wl-fsb-widget .wl-fsb-close {
+    color: #333;
+    background: #ddd;
+}
+
+/* Hide countdown when widget sets wl-fsb-no-countdown */
+.wl-fsb-no-countdown .wl-fsb-countdown {
+    display: none !important;
+}
+
+/* Gutenberg Block */
+.wp-block-woolentor-free-shipping-bar .wl-fsb-text p {
+    margin: 0;
+}

@@ -1,0 +1,89 @@
+<wpml-config>
+  <custom-types>
+    <custom-type translate="0">e-landing-page</custom-type>
+    <custom-type translate="0">elementor_library</custom-type>
+    <custom-type translate="0">htslider_slider</custom-type>
+    <custom-type translate="0">product</custom-type>
+    <custom-type translate="0">product_variation</custom-type>
+    <custom-type translate="0">shop_order</custom-type>
+    <custom-type translate="0">shop_order_refund</custom-type>
+    <custom-type translate="0">shop_coupon</custom-type>
+    <custom-type translate="0">mc4wp-form</custom-type>
+  </custom-types>
+  <taxonomies>
+    <taxonomy translate="0">elementor_library_type</taxonomy>
+    <taxonomy translate="0">elementor_library_category</taxonomy>
+    <taxonomy translate="0">htslider_category</taxonomy>
+    <taxonomy translate="0">product_type</taxonomy>
+    <taxonomy translate="0">product_visibility</taxonomy>
+    <taxonomy translate="0">product_cat</taxonomy>
+    <taxonomy translate="0">product_tag</taxonomy>
+    <taxonomy translate="0">product_shipping_class</taxonomy>
+  </taxonomies>
+  <custom-fields>
+    <custom-field action="ignore">_wp_page_template</custom-field>
+    <custom-field action="ignore">_wp_attached_file</custom-field>
+    <custom-field action="ignore">_wp_attachment_metadata</custom-field>
+    <custom-field action="ignore">_elementor_edit_mode</custom-field>
+    <custom-field action="ignore">_elementor_template_type</custom-field>
+    <custom-field action="ignore">_elementor_version</custom-field>
+    <custom-field action="ignore">_edit_lock</custom-field>
+    <custom-field action="ignore">_menu_item_type</custom-field>
+    <custom-field action="ignore">_menu_item_menu_item_parent</custom-field>
+    <custom-field action="ignore">_menu_item_object_id</custom-field>
+    <custom-field action="ignore">_menu_item_object</custom-field>
+    <custom-field action="ignore">_menu_item_target</custom-field>
+    <custom-field action="ignore">_menu_item_classes</custom-field>
+    <custom-field action="ignore">_menu_item_xfn</custom-field>
+    <custom-field action="ignore">_menu_item_url</custom-field>
+    <custom-field action="ignore">_menu_item_orphaned</custom-field>
+    <custom-field action="ignore">_menu_item_megamenu</custom-field>
+    <custom-field action="ignore">_menu_item_megamenucolumn</custom-field>
+    <custom-field action="ignore">_menu_item_columntitle</custom-field>
+    <custom-field action="ignore">htmove_page_views_count</custom-field>
+    <custom-field action="ignore">_thumbnail_id</custom-field>
+    <custom-field action="ignore">htmove_post_views_count</custom-field>
+    <custom-field action="ignore">_sku</custom-field>
+    <custom-field action="ignore">total_sales</custom-field>
+    <custom-field action="ignore">_tax_status</custom-field>
+    <custom-field action="ignore">_tax_class</custom-field>
+    <custom-field action="ignore">_manage_stock</custom-field>
+    <custom-field action="ignore">_backorders</custom-field>
+    <custom-field action="ignore">_sold_individually</custom-field>
+    <custom-field action="ignore">_virtual</custom-field>
+    <custom-field action="ignore">_downloadable</custom-field>
+    <custom-field action="ignore">_download_limit</custom-field>
+    <custom-field action="ignore">_download_expiry</custom-field>
+    <custom-field action="ignore">_stock_status</custom-field>
+    <custom-field action="ignore">_wc_average_rating</custom-field>
+    <custom-field action="ignore">_wc_review_count</custom-field>
+    <custom-field action="ignore">_product_version</custom-field>
+    <custom-field action="ignore">_wpcom_is_markdown</custom-field>
+    <custom-field action="ignore">_wp_old_slug</custom-field>
+    <custom-field action="ignore">_regular_price</custom-field>
+    <custom-field action="ignore">_price</custom-field>
+    <custom-field action="ignore">_edit_last</custom-field>
+    <custom-field action="ignore">_saleflash_text</custom-field>
+    <custom-field action="ignore">_product_image_gallery</custom-field>
+    <custom-field action="ignore">_stock</custom-field>
+    <custom-field action="ignore">_wp_trash_meta_status</custom-field>
+    <custom-field action="ignore">_wp_trash_meta_time</custom-field>
+    <custom-field action="ignore">_wp_desired_post_slug</custom-field>
+    <custom-field action="ignore">_wp_trash_meta_comments_status</custom-field>
+    <custom-field action="ignore">_elementor_css</custom-field>
+    <custom-field action="ignore">_elementor_data</custom-field>
+    <custom-field action="ignore">_elementor_controls_usage</custom-field>
+    <custom-field action="ignore">_elementor_source_image_hash</custom-field>
+    <custom-field action="ignore">_mc4wp_settings</custom-field>
+    <custom-field action="ignore">text_subscribed</custom-field>
+    <custom-field action="ignore">text_invalid_email</custom-field>
+    <custom-field action="ignore">text_required_field_missing</custom-field>
+    <custom-field action="ignore">text_already_subscribed</custom-field>
+    <custom-field action="ignore">text_error</custom-field>
+    <custom-field action="ignore">text_unsubscribed</custom-field>
+    <custom-field action="ignore">text_not_subscribed</custom-field>
+    <custom-field action="ignore">text_no_lists_selected</custom-field>
+    <custom-field action="ignore">text_updated</custom-field>
+    <custom-field action="ignore">_elementor_page_settings</custom-field>
+  </custom-fields>
+</wpml-config>
